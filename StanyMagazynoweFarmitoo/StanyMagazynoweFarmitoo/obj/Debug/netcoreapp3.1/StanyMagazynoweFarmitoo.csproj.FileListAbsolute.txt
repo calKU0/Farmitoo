@@ -21,3 +21,5 @@ C:\Users\kkur\Desktop\Projekty Github\Farmitoo\StanyMagazynoweFarmitoo\StanyMaga
 C:\Users\kkur\Desktop\Projekty Github\Farmitoo\StanyMagazynoweFarmitoo\StanyMagazynoweFarmitoo\obj\Debug\netcoreapp3.1\StanyMagazynoweFarmitoo.dll
 C:\Users\kkur\Desktop\Projekty Github\Farmitoo\StanyMagazynoweFarmitoo\StanyMagazynoweFarmitoo\obj\Debug\netcoreapp3.1\StanyMagazynoweFarmitoo.pdb
 C:\Users\kkur\Desktop\Projekty Github\Farmitoo\StanyMagazynoweFarmitoo\StanyMagazynoweFarmitoo\obj\Debug\netcoreapp3.1\StanyMagazynoweFarmitoo.genruntimeconfig.cache
+C:\Users\kkur\Desktop\Projekty Github\Farmitoo\StanyMagazynoweFarmitoo\StanyMagazynoweFarmitoo\bin\Debug\netcoreapp3.1\Renci.SshNet.dll
+C:\Users\kkur\Desktop\Projekty Github\Farmitoo\StanyMagazynoweFarmitoo\StanyMagazynoweFarmitoo\bin\Debug\netcoreapp3.1\SshNet.Security.Cryptography.dll
