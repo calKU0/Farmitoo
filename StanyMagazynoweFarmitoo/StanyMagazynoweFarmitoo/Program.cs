@@ -72,11 +72,11 @@ namespace StanyMagazynoweFarmitoo
             }
 
             // Dane do logowanaia SFTP
-            string sftpHost = "xxxx";
+            string sftpHost = "sftp.farmitoo.tech";
             int sftpPort = 22;
-            string sftpUsername = "xxxx";
-            string sftpPassword = "xxxx";
-            string sftpFolderPath = "xxxx";
+            string sftpUsername = "gaska";
+            string sftpPassword = "2NmqPbx54b2F3U";
+            string sftpFolderPath = "/home/gaska/stock";
             string sftpFileName = "stock_" + data + ".csv";
 
 
@@ -98,7 +98,7 @@ namespace StanyMagazynoweFarmitoo
             }
 
             Console.WriteLine("Plik stock_" + data + ".csv został wygenerowany pomyślnie");
-            Console.WriteLine("Plik stock_" + data + ".csv został przesłany na serwer FTP: "+sftpHost);
+            Console.WriteLine("Plik stock_" + data + ".csv został przesłany na serwer SFTP: "+sftpHost);
             Console.ReadKey();
         }
     }
