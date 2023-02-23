@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "zVAFm1InNZuedb38i29DTY2nmJJYhwJ/VH4QFV7qDreOEs4gj/OXGkoABHYFsQb6qWkiYRdoPl075auAaLv14Q==",
+  "dgSpecHash": "ynv0mWP5A+oTp9Iil0TMmK2COYBKwdf4R+lSb/3FTBxbkZSPxQ/Xtoe2HQpPO8Jwv2e6dD0JrTFjdJcNaHOFqA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kkur\\Desktop\\Projekty Github\\Farmitoo\\PobieranieZamówieniaFarmitoo\\PobieranieZamówieniaFarmitoo\\PobieranieZamówieniaFarmitoo.csproj",
+  "projectFilePath": "C:\\Users\\kkur\\Desktop\\Projekty Github\\Farmitoo\\PobieranieZamowieniaFarmitoo\\PobieranieZamówieniaFarmitoo\\PobieranieZamówieniaFarmitoo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kkur\\.nuget\\packages\\chilkat-x64\\9.5.0.93\\chilkat-x64.9.5.0.93.nupkg.sha512",
+    "C:\\Users\\kkur\\.nuget\\packages\\ssh.net\\2020.0.2\\ssh.net.2020.0.2.nupkg.sha512",
     "C:\\Users\\kkur\\.nuget\\packages\\ssh.netstd21\\2020.0.2\\ssh.netstd21.2020.0.2.nupkg.sha512",
     "C:\\Users\\kkur\\.nuget\\packages\\sshnet.security.cryptography\\1.3.0\\sshnet.security.cryptography.1.3.0.nupkg.sha512"
   ],

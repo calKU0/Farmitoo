@@ -1,15 +1,16 @@
 ﻿using System;
-using System.Data;
-using System.Data.SqlClient;
-using System.IO;
+using System.Linq;
+using System.Collections.Generic;
 using Renci.SshNet;
-using Renci.SshNet.Common;
 using Renci.SshNet.Sftp;
+using System.IO;
+using System.Configuration;
+using System.IO.Compression;
 using Chilkat;
 
 namespace PobieranieZamówieniaFarmitoo
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -17,26 +18,27 @@ namespace PobieranieZamówieniaFarmitoo
             int sftpPort = 22;
             string sftpUsername = "xxxx";
             string sftpPassword = "xxxx";
-            string sftpFolderPath = "xxxx";
+            string sftpFolderPath = "/home/gaska/order";
             string localPath = @"C:\temp\";
+            string sftpArchFolderPath = "/home/gaska/archive/";
 
-            Chilkat.SFtp sftp = new Chilkat.SFtp();
+            Chilkat.SFtp sftpp = new Chilkat.SFtp();
 
-            bool success = sftp.Connect(sftpHost, sftpPort);
+            bool success = sftpp.Connect(sftpHost, sftpPort);
             if (success == true)
             {
-                success = sftp.AuthenticatePw(sftpUsername, sftpPassword);
+                success = sftpp.AuthenticatePw(sftpUsername, sftpPassword);
             }
 
             if (success == true)
             {
-                success = sftp.InitializeSftp();
+                success = sftpp.InitializeSftp();
                 Console.WriteLine("Pomyślnie połączono z serwerem " + sftpHost);
             }
 
             if (success != true)
             {
-                Console.WriteLine(sftp.LastErrorText);
+                Console.WriteLine(sftpp.LastErrorText);
                 return;
             }
 
@@ -45,16 +47,28 @@ namespace PobieranieZamówieniaFarmitoo
             // Do not recursively descend the remote directory tree.  Just download all the files in specified directory.
             bool recursive = false;
 
-            success = sftp.SyncTreeDownload(sftpFolderPath, localPath, mode, recursive);
+            success = sftpp.SyncTreeDownload(sftpFolderPath, localPath, mode, recursive);
             if (success != true)
             {
-                Console.WriteLine(sftp.LastErrorText);
+                Console.WriteLine(sftpp.LastErrorText);
                 return;
             }
+            else
+            {
+                using (var client = new SftpClient(sftpHost, sftpPort, sftpUsername, sftpPassword))
+                {
+                    client.Connect();
+                    var files = client.ListDirectory(sftpFolderPath);
 
-            Console.WriteLine("Pomyślnie pobrano pliki z katalogu "+sftpFolderPath);
-
-
+                    foreach (var file in files)
+                    {
+                        client.RenameFile(file.FullName, $"{sftpArchFolderPath}/{file.Name}");
+                    }
+                    client.Disconnect();
+                }
+                Console.WriteLine("Pomyślnie pobrano pliki z katalogu " + sftpFolderPath);
+            }
         }
+
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kkur\\Desktop\\Projekty Github\\Farmitoo\\PobieranieZamówieniaFarmitoo\\PobieranieZamówieniaFarmitoo\\PobieranieZamówieniaFarmitoo.csproj": {}
+    "C:\\Users\\kkur\\Desktop\\Projekty Github\\Farmitoo\\PobieranieZamowieniaFarmitoo\\PobieranieZamówieniaFarmitoo\\PobieranieZamówieniaFarmitoo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kkur\\Desktop\\Projekty Github\\Farmitoo\\PobieranieZamówieniaFarmitoo\\PobieranieZamówieniaFarmitoo\\PobieranieZamówieniaFarmitoo.csproj": {
+    "C:\\Users\\kkur\\Desktop\\Projekty Github\\Farmitoo\\PobieranieZamowieniaFarmitoo\\PobieranieZamówieniaFarmitoo\\PobieranieZamówieniaFarmitoo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kkur\\Desktop\\Projekty Github\\Farmitoo\\PobieranieZamówieniaFarmitoo\\PobieranieZamówieniaFarmitoo\\PobieranieZamówieniaFarmitoo.csproj",
+        "projectUniqueName": "C:\\Users\\kkur\\Desktop\\Projekty Github\\Farmitoo\\PobieranieZamowieniaFarmitoo\\PobieranieZamówieniaFarmitoo\\PobieranieZamówieniaFarmitoo.csproj",
         "projectName": "PobieranieZamówieniaFarmitoo",
-        "projectPath": "C:\\Users\\kkur\\Desktop\\Projekty Github\\Farmitoo\\PobieranieZamówieniaFarmitoo\\PobieranieZamówieniaFarmitoo\\PobieranieZamówieniaFarmitoo.csproj",
+        "projectPath": "C:\\Users\\kkur\\Desktop\\Projekty Github\\Farmitoo\\PobieranieZamowieniaFarmitoo\\PobieranieZamówieniaFarmitoo\\PobieranieZamówieniaFarmitoo.csproj",
         "packagesPath": "C:\\Users\\kkur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kkur\\Desktop\\Projekty Github\\Farmitoo\\PobieranieZamówieniaFarmitoo\\PobieranieZamówieniaFarmitoo\\obj\\",
+        "outputPath": "C:\\Users\\kkur\\Desktop\\Projekty Github\\Farmitoo\\PobieranieZamowieniaFarmitoo\\PobieranieZamówieniaFarmitoo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "SSH.NET": {
+              "target": "Package",
+              "version": "[2020.0.2, )"
+            },
             "Ssh.NetStd21": {
               "target": "Package",
               "version": "[2020.0.2, )"
