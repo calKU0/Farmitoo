@@ -6,7 +6,6 @@ using Renci.SshNet.Sftp;
 using System.IO;
 using System.Configuration;
 using System.IO.Compression;
-using Chilkat;
 
 namespace PobieranieZamówieniaFarmitoo
 {
@@ -18,57 +17,68 @@ namespace PobieranieZamówieniaFarmitoo
             int sftpPort = 22;
             string sftpUsername = "xxxx";
             string sftpPassword = "xxxx";
-            string sftpFolderPath = "/home/gaska/order";
+            string sftpFolderPath = "xxxx";
             string localPath = @"C:\temp\";
-            string sftpArchFolderPath = "/home/gaska/archive/";
+            string sftpArchFolderPath = "xxxx";
+            int j = 0;
 
-            Chilkat.SFtp sftpp = new Chilkat.SFtp();
 
-            bool success = sftpp.Connect(sftpHost, sftpPort);
-            if (success == true)
+            //Łączenie z serwerem
+            using (var client = new SftpClient(sftpHost, sftpPort, sftpUsername, sftpPassword))
             {
-                success = sftpp.AuthenticatePw(sftpUsername, sftpPassword);
-            }
-
-            if (success == true)
-            {
-                success = sftpp.InitializeSftp();
-                Console.WriteLine("Pomyślnie połączono z serwerem " + sftpHost);
-            }
-
-            if (success != true)
-            {
-                Console.WriteLine(sftpp.LastErrorText);
-                return;
-            }
-
-            // Mode 0 causes SyncTreeDownload to download all files.
-            int mode = 0;
-            // Do not recursively descend the remote directory tree.  Just download all the files in specified directory.
-            bool recursive = false;
-
-            success = sftpp.SyncTreeDownload(sftpFolderPath, localPath, mode, recursive);
-            if (success != true)
-            {
-                Console.WriteLine(sftpp.LastErrorText);
-                return;
-            }
-            else
-            {
-                using (var client = new SftpClient(sftpHost, sftpPort, sftpUsername, sftpPassword))
-                {
+                try
+                {   
                     client.Connect();
-                    var files = client.ListDirectory(sftpFolderPath);
+                    Console.WriteLine("Pomyślnie połączono z serwerem " + sftpHost);
 
+                    //Pobieranie plików
+                    var files = client.ListDirectory(sftpFolderPath);
                     foreach (var file in files)
                     {
-                        client.RenameFile(file.FullName, $"{sftpArchFolderPath}/{file.Name}");
+                        if (!file.Name.StartsWith("."))
+                        {
+                            using (Stream fileStream = File.Create(localPath+file.Name))
+                            {
+                                client.DownloadFile(file.FullName, fileStream);
+                                j++;
+                            }
+                        }
                     }
-                    client.Disconnect();
+
+
+
+                    Console.WriteLine("Pomyślnie pobrano " + j + " plików z katalogu " + sftpFolderPath);
+                    int i = 0;
+                    //Przenoszenie plików do folderu archiwalnego na sftp
+                    if (files != null)
+                    {
+                        foreach (var file in files)
+                        {
+                            if (file.IsDirectory) continue;
+                            client.RenameFile(file.FullName, $"{sftpArchFolderPath}/{file.Name}");
+                            i++;
+                        }
+                        client.Disconnect();
+
+                        Console.WriteLine("Pomyślnie przeniesiono " + i + " plików do folderu archiwalnego");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Brak plików do pobrania");
+                        client.Disconnect();
+                    }
                 }
-                Console.WriteLine("Pomyślnie pobrano pliki z katalogu " + sftpFolderPath);
+
+                
+
+                catch (Exception e)
+                {
+                    Console.WriteLine("Wystąpił błąd: " + e);
+                }
             }
         }
 
-    }
-}
+    } }
+
+    
+
