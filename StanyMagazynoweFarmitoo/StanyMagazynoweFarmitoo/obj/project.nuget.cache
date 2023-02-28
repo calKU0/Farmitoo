@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TsqJ9W1f6jFNdv3HXN6loG3X5a7MXkNeNJe6il4ce2I5mio+Q5x5lco5OtIIC/OnUBN613voa7O4LQXIk+IMog==",
+  "dgSpecHash": "iolizh04coy9Egysu8z6Gz4w0/R0GFihlrH5ftuC12uU/VgnMH0wDjq0uZ44IwmRR3pBVgtE2GlNVmbGDe0Dog==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kkur\\Desktop\\StanyMagazynoweFarmitoo\\StanyMagazynoweFarmitoo\\StanyMagazynoweFarmitoo.csproj",
+  "projectFilePath": "C:\\Users\\kkur\\Desktop\\Projekty Github\\Farmitoo\\StanyMagazynoweFarmitoo\\StanyMagazynoweFarmitoo\\StanyMagazynoweFarmitoo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kkur\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\kkur\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

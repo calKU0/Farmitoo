@@ -547,11 +547,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kkur\\Desktop\\StanyMagazynoweFarmitoo\\StanyMagazynoweFarmitoo\\StanyMagazynoweFarmitoo.csproj",
+      "projectUniqueName": "C:\\Users\\kkur\\Desktop\\Projekty Github\\Farmitoo\\StanyMagazynoweFarmitoo\\StanyMagazynoweFarmitoo\\StanyMagazynoweFarmitoo.csproj",
       "projectName": "StanyMagazynoweFarmitoo",
-      "projectPath": "C:\\Users\\kkur\\Desktop\\StanyMagazynoweFarmitoo\\StanyMagazynoweFarmitoo\\StanyMagazynoweFarmitoo.csproj",
+      "projectPath": "C:\\Users\\kkur\\Desktop\\Projekty Github\\Farmitoo\\StanyMagazynoweFarmitoo\\StanyMagazynoweFarmitoo\\StanyMagazynoweFarmitoo.csproj",
       "packagesPath": "C:\\Users\\kkur\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kkur\\Desktop\\StanyMagazynoweFarmitoo\\StanyMagazynoweFarmitoo\\obj\\",
+      "outputPath": "C:\\Users\\kkur\\Desktop\\Projekty Github\\Farmitoo\\StanyMagazynoweFarmitoo\\StanyMagazynoweFarmitoo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
