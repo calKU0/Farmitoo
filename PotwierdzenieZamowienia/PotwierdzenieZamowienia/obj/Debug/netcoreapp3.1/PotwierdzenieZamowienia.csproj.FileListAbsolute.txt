@@ -1,0 +1,16 @@
+C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PotwierdzenieZamowienia\PotwierdzenieZamowienia\bin\Debug\netcoreapp3.1\PotwierdzenieZamowienia.exe
+C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PotwierdzenieZamowienia\PotwierdzenieZamowienia\bin\Debug\netcoreapp3.1\PotwierdzenieZamowienia.deps.json
+C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PotwierdzenieZamowienia\PotwierdzenieZamowienia\bin\Debug\netcoreapp3.1\PotwierdzenieZamowienia.runtimeconfig.json
+C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PotwierdzenieZamowienia\PotwierdzenieZamowienia\bin\Debug\netcoreapp3.1\PotwierdzenieZamowienia.runtimeconfig.dev.json
+C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PotwierdzenieZamowienia\PotwierdzenieZamowienia\bin\Debug\netcoreapp3.1\PotwierdzenieZamowienia.dll
+C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PotwierdzenieZamowienia\PotwierdzenieZamowienia\bin\Debug\netcoreapp3.1\PotwierdzenieZamowienia.pdb
+C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PotwierdzenieZamowienia\PotwierdzenieZamowienia\bin\Debug\netcoreapp3.1\Renci.SshNet.dll
+C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PotwierdzenieZamowienia\PotwierdzenieZamowienia\bin\Debug\netcoreapp3.1\SshNet.Security.Cryptography.dll
+C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PotwierdzenieZamowienia\PotwierdzenieZamowienia\obj\Debug\netcoreapp3.1\PotwierdzenieZamowienia.csprojAssemblyReference.cache
+C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PotwierdzenieZamowienia\PotwierdzenieZamowienia\obj\Debug\netcoreapp3.1\PotwierdzenieZamowienia.AssemblyInfoInputs.cache
+C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PotwierdzenieZamowienia\PotwierdzenieZamowienia\obj\Debug\netcoreapp3.1\PotwierdzenieZamowienia.AssemblyInfo.cs
+C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PotwierdzenieZamowienia\PotwierdzenieZamowienia\obj\Debug\netcoreapp3.1\PotwierdzenieZamowienia.csproj.CoreCompileInputs.cache
+C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PotwierdzenieZamowienia\PotwierdzenieZamowienia\obj\Debug\netcoreapp3.1\PotwierdzenieZamowienia.csproj.CopyComplete
+C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PotwierdzenieZamowienia\PotwierdzenieZamowienia\obj\Debug\netcoreapp3.1\PotwierdzenieZamowienia.dll
+C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PotwierdzenieZamowienia\PotwierdzenieZamowienia\obj\Debug\netcoreapp3.1\PotwierdzenieZamowienia.pdb
+C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PotwierdzenieZamowienia\PotwierdzenieZamowienia\obj\Debug\netcoreapp3.1\PotwierdzenieZamowienia.genruntimeconfig.cache
