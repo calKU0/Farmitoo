@@ -17,3 +17,4 @@ C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PobieranieIWysylka\PobieranieIWys
 C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Release\netcoreapp3.1\PobieranieIWysylka.dll
 C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Release\netcoreapp3.1\PobieranieIWysylka.pdb
 C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Release\netcoreapp3.1\PobieranieIWysylka.genruntimeconfig.cache
+C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Release\netcoreapp3.1\PobieranieIWysylka.csprojAssemblyReference.cache

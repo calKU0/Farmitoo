@@ -19,8 +19,8 @@ namespace PobieranieIWysylka
         int sftpPort = int.Parse(ConfigurationManager.AppSettings["SftpPort"]);
         string sftpUsername = ConfigurationManager.AppSettings["SftpUsername"];
         string sftpPassword = ConfigurationManager.AppSettings["SftpPassword"];
-        private string sftpFolderPath = "/home/gaska/order";
-        private string localPath = @"C:\temp\";
+        private string sftpFolderPath = "/home/gaska/confirmation";
+        private string localPath = @"\\Backup\k\Foldery pracowników\Krzysztof Kurowski\PotwierdzenieZamowienia (Test na farmitoo)\";
         private string archivefolder = @"\\Backup\k\Foldery pracowników\Krzysztof Kurowski\Archiwalne (test na farmitoo)\";
         private string pattern = @"^confirmation_\d{14}\.csv$"; //Pattern który matchuje pliki zaczynające się na confirmation_, potem 14 cyfr i rozszerzenie CSV
 
@@ -106,6 +106,7 @@ namespace PobieranieIWysylka
             this.Hide();
             Form1 f1 = new Form1(); //Redirect do formularza 1
             f1.ShowDialog();
+            this.Close();
         }
 
     }

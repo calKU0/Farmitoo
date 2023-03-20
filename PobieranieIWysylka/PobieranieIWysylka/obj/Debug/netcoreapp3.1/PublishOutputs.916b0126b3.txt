@@ -1,0 +1,8 @@
+C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Debug\netcoreapp3.1\publish\PobieranieIWysylka.exe
+C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Debug\netcoreapp3.1\publish\PobieranieIWysylka.dll
+C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Debug\netcoreapp3.1\publish\PobieranieIWysylka.deps.json
+C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Debug\netcoreapp3.1\publish\PobieranieIWysylka.runtimeconfig.json
+C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Debug\netcoreapp3.1\publish\PobieranieIWysylka.dll.config
+C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Debug\netcoreapp3.1\publish\PobieranieIWysylka.pdb
+C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Debug\netcoreapp3.1\publish\Renci.SshNet.dll
+C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Debug\netcoreapp3.1\publish\SshNet.Security.Cryptography.dll

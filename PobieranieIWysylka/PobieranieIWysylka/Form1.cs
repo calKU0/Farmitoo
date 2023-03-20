@@ -20,7 +20,7 @@ namespace PobieranieIWysylka
         string sftpUsername = ConfigurationManager.AppSettings["SftpUsername"];
         string sftpPassword = ConfigurationManager.AppSettings["SftpPassword"];
         private string sftpFolderPath = "/home/gaska/order";
-        private string localPath = @"C:\temp\";
+        private string localPath = @"\\Backup\k\Foldery pracowników\Krzysztof Kurowski\Zamówienia (Testy na farmitoo)\";
         private string sftpArchFolderPath = "/home/gaska/archive";
 
         public Form1()
@@ -119,6 +119,7 @@ namespace PobieranieIWysylka
             this.Hide();
             Form2 f2 = new Form2(); //Redirect do formularza 2
             f2.ShowDialog();
+            this.Close();
 
         }
 
