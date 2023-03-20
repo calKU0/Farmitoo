@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PobieranieIWysylka", "PobieranieIWysylka\PobieranieIWysylka.csproj", "{49AD8C90-23CD-469B-A105-25A9F53B3925}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49AD8C90-23CD-469B-A105-25A9F53B3925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49AD8C90-23CD-469B-A105-25A9F53B3925}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49AD8C90-23CD-469B-A105-25A9F53B3925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49AD8C90-23CD-469B-A105-25A9F53B3925}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F774735-1A27-478D-9BEF-D7DF91A6C29E}
+	EndGlobalSection
+EndGlobal

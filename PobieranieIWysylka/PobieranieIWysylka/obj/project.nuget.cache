@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "o2TCfgweT9TLEK/Y5X+PzPghQ/4SqqzdzmyRLP+PrpjFDg+QoSGO8C9Fnlju9pRRKyGRxOenqGxkdYgdEExZtw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kkur\\Desktop\\Projekty Github\\Farmitoo\\PobieranieIWysylka\\PobieranieIWysylka\\PobieranieIWysylka.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kkur\\.nuget\\packages\\ssh.net\\2020.0.2\\ssh.net.2020.0.2.nupkg.sha512",
+    "C:\\Users\\kkur\\.nuget\\packages\\sshnet.security.cryptography\\1.3.0\\sshnet.security.cryptography.1.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}
