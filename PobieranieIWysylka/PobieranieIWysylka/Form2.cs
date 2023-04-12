@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using Renci.SshNet;
@@ -19,86 +15,43 @@ namespace PobieranieIWysylka
         int sftpPort = int.Parse(ConfigurationManager.AppSettings["SftpPort"]);
         string sftpUsername = ConfigurationManager.AppSettings["SftpUsername"];
         string sftpPassword = ConfigurationManager.AppSettings["SftpPassword"];
-        private string sftpFolderPath = "/home/gaska/confirmation";
-        private string localPath = @"\\Backup\k\Foldery pracowników\Krzysztof Kurowski\PotwierdzenieZamowienia (Test na farmitoo)\";
-        private string archivefolder = @"\\Backup\k\Foldery pracowników\Krzysztof Kurowski\Archiwalne (test na farmitoo)\";
-        private string pattern = @"^confirmation_\d{14}\.csv$"; //Pattern który matchuje pliki zaczynające się na confirmation_, potem 14 cyfr i rozszerzenie CSV
+        string sftpFolderPath = "/home/gaska/confirmation";
+        private string localConfirmationPath = @"\\Backup\k\Farmitoo\Potwierdzenia\";
+        private string trackingarchivefolder = @"\\Backup\k\Farmitoo\Pliki archiwalne\Tracking\";
+        private string confirmationarchivefolder = @"\\Backup\k\Farmitoo\Pliki archiwalne\Potwierdzenia\";
+        private string confirmationPattern = @"^confirmation_\d{14}\.csv$"; //Pattern który matchuje pliki zaczynające się na confirmation_, potem 14 cyfr i rozszerzenie CSV
+        private string trackingPattern = @"^tracking_\d{14}\.csv$"; //Pattern który matchuje pliki zaczynające się na tracking_, potem 14 cyfr i rozszerzenie CSV
+        private string sftpTrackingFolder = "/home/gaska/tracking";
+        private string localTrackingFolder = @"\\Backup\k\Farmitoo\Tracking\";
 
         public Form2()
         {
             InitializeComponent();
-            var filesToUpload = Directory.GetFiles(localPath)
-                                                    .Where(file => Regex.IsMatch(Path.GetFileName(file), pattern))
+            //Dodawanie plików do pierwszej listy
+            var conf_files = Directory.GetFiles(localConfirmationPath)
+                                                    .Where(file => Regex.IsMatch(Path.GetFileName(file), confirmationPattern))
                                                     .ToArray();
 
-            foreach (string file in filesToUpload)
+            foreach (string file in conf_files)
             {
                 listBox1.Items.Add(Path.GetFileName(file).ToString() + Environment.NewLine);
+            }
+
+            //Dodawanie plików do drugiej listy
+            var tracking_files = Directory.GetFiles(localTrackingFolder)
+                                        .Where(file => Regex.IsMatch(Path.GetFileName(file), trackingPattern))
+                                        .ToArray();
+
+            foreach (string file in tracking_files)
+            {
+                listBox2.Items.Add(Path.GetFileName(file).ToString() + Environment.NewLine);
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-
-            using (var client = new SftpClient(sftpHost, sftpPort, sftpUsername, sftpPassword))
-            {
-                try
-                {
-                    client.Connect();
-                    if (client.IsConnected)
-                    {
-
-                        // Dokopywanie się do plików, które matchują patternowi
-                        var filesToUpload = Directory.GetFiles(localPath)
-                                                    .Where(file => Regex.IsMatch(Path.GetFileName(file), pattern))
-                                                    .ToArray();
-
-                        if (filesToUpload.Length != 0)
-                        {
-                            Wysyłka();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Nie ma żadnych plików do przesłania");
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Nie udało się połączyć z serwerem sftp!");
-                    }
-
-                }
-                catch (Exception m)
-                {
-                    client.Disconnect();
-                    MessageBox.Show("Wystąpił błąd: " + m);
-                }
-
-                void Wysyłka()
-                {
-                    var filesToUpload = Directory.GetFiles(localPath)
-                            .Where(file => Regex.IsMatch(Path.GetFileName(file), pattern))
-                            .ToArray();
-
-                    client.ChangeDirectory(sftpFolderPath);
-
-                    // Wysyłanie plików na sftp
-                    foreach (string file in filesToUpload)
-                    {
-                        using (FileStream fs = new FileStream(file, FileMode.Open))
-                        {
-                            client.BufferSize = 1024;
-                            client.UploadFile(fs, Path.GetFileName(file));
-                        }
-                        File.Move(file, archivefolder + Path.GetFileName(file)); // Przenoszenie pliku do folderu archiwalnego
-                    }
-
-                    MessageBox.Show("Pomyślnie przesłano pliki");
-                    listBox1.Items.Clear();
-                    client.Disconnect();
-                }
-            }
+            Wysyłka(localConfirmationPath, confirmationPattern, sftpFolderPath, confirmationarchivefolder);
+            Wysyłka(localTrackingFolder, trackingPattern, sftpTrackingFolder, trackingarchivefolder);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -109,5 +62,66 @@ namespace PobieranieIWysylka
             this.Close();
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Wysyłka(localConfirmationPath, confirmationPattern, sftpFolderPath, confirmationarchivefolder);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Wysyłka(localTrackingFolder, trackingPattern, sftpTrackingFolder, trackingarchivefolder);
+        }
+
+
+        void Wysyłka(string local_folder, string pattern, string sftp_folder, string archivefolder)
+        {
+            using (var client = new SftpClient(sftpHost, sftpPort, sftpUsername, sftpPassword))
+            {
+                try
+                {
+                    client.Connect();
+                    if (client.IsConnected)
+                    {
+                        var filesToUpload = Directory.GetFiles(local_folder)
+                                .Where(file => Regex.IsMatch(Path.GetFileName(file), pattern))
+                                .ToArray();
+
+                        client.ChangeDirectory(sftp_folder);
+
+                        // Wysyłanie plików na sftp
+                        foreach (string file in filesToUpload)
+                        {
+                            using (FileStream fs = new FileStream(file, FileMode.Open))
+                            {
+                                client.BufferSize = 1024;
+                                client.UploadFile(fs, Path.GetFileName(file));
+                            }
+                            File.Move(file, archivefolder + Path.GetFileName(file)); // Przenoszenie pliku do folderu archiwalnego
+                        }
+                        if (local_folder == localTrackingFolder)
+                        {
+                            MessageBox.Show("Pomyślnie przesłano tracking listy");
+                            listBox2.Items.Clear();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Pomyślnie przesłano potwierdzenia zamównień");
+                            listBox1.Items.Clear();
+                        }
+                        client.Disconnect();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Nie połączona z serwerem SFTP");
+                    }
+                }
+                catch (Exception m)
+                {
+                    client.Disconnect();
+                    MessageBox.Show("Wystąpił błąd: " + m);
+                }
+            }
+        
+        }
     }
 }

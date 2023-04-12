@@ -1,0 +1,2 @@
+\\Backup\k\Foldery pracowników\Krzysztof Kurowski\Projekty\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Release\netcoreapp3.1\publish\PobieranieIWysylka.pdb
+\\Backup\k\Foldery pracowników\Krzysztof Kurowski\Projekty\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Release\netcoreapp3.1\publish\PobieranieIWysylka.exe

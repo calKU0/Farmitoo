@@ -103,11 +103,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kkur\\Desktop\\Projekty Github\\Farmitoo\\PobieranieIWysylka\\PobieranieIWysylka\\PobieranieIWysylka.csproj",
+      "projectUniqueName": "C:\\Users\\kkur\\Desktop\\Projekty repozytoria\\Farmitoo\\PobieranieIWysylka\\PobieranieIWysylka\\PobieranieIWysylka.csproj",
       "projectName": "PobieranieIWysylka",
-      "projectPath": "C:\\Users\\kkur\\Desktop\\Projekty Github\\Farmitoo\\PobieranieIWysylka\\PobieranieIWysylka\\PobieranieIWysylka.csproj",
+      "projectPath": "C:\\Users\\kkur\\Desktop\\Projekty repozytoria\\Farmitoo\\PobieranieIWysylka\\PobieranieIWysylka\\PobieranieIWysylka.csproj",
       "packagesPath": "C:\\Users\\kkur\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kkur\\Desktop\\Projekty Github\\Farmitoo\\PobieranieIWysylka\\PobieranieIWysylka\\obj\\",
+      "outputPath": "C:\\Users\\kkur\\Desktop\\Projekty repozytoria\\Farmitoo\\PobieranieIWysylka\\PobieranieIWysylka\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

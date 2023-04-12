@@ -20,40 +20,46 @@ namespace PobieranieIWysylka
         string sftpUsername = ConfigurationManager.AppSettings["SftpUsername"];
         string sftpPassword = ConfigurationManager.AppSettings["SftpPassword"];
         private string sftpFolderPath = "/home/gaska/order";
-        private string localPath = @"\\Backup\k\Foldery pracowników\Krzysztof Kurowski\Zamówienia (Testy na farmitoo)\";
+        private string localPath = @"\\Backup\k\Farmitoo\Zamówienia\";
         private string sftpArchFolderPath = "/home/gaska/archive";
 
         public Form1()
         {
-            InitializeComponent();
-            using (var client = new SftpClient(sftpHost, sftpPort, sftpUsername, sftpPassword))
+            try
             {
-                client.Connect();
-                var files = client.ListDirectory(sftpFolderPath);
-                int i = files.Count() - 2;
-                client.Disconnect();
-
-                if (i != 0)
+                InitializeComponent();
+                using (var client = new SftpClient(sftpHost, sftpPort, sftpUsername, sftpPassword))
                 {
-                    if (i == 1)
+                    client.Connect();
+                    var files = client.ListDirectory(sftpFolderPath);
+                    int i = files.Count() - 2;
+                    client.Disconnect();
+
+                    if (i != 0)
                     {
-                        maskedTextBox1.AppendText(i + " plik do pobrania");
-                    }
-                    else if (i == 2 || i == 3 || i == 4)
-                    {
-                        maskedTextBox1.AppendText(i + " pliki do pobrania");
-                    }
-                    else
-                    {
-                        maskedTextBox1.AppendText(i + " plików do pobrania");
+                        if (i == 1)
+                        {
+                            maskedTextBox1.AppendText(i + " plik do pobrania");
+                        }
+                        else if (i == 2 || i == 3 || i == 4)
+                        {
+                            maskedTextBox1.AppendText(i + " pliki do pobrania");
+                        }
+                        else
+                        {
+                            maskedTextBox1.AppendText(i + " plików do pobrania");
+                        }
                     }
                 }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Wystąpił błąd " + e);
             }
         }
 
 
         private void button1_Click(object sender, EventArgs e)
-
         {
 
             //Łączenie z serwerem
@@ -62,7 +68,6 @@ namespace PobieranieIWysylka
                 try
                 {
                     client.Connect();
-                    Console.WriteLine("Pomyślnie połączono z serwerem " + sftpHost);
 
                     //Pobieranie wszystkich plików
                     var files = client.ListDirectory(sftpFolderPath);
@@ -85,15 +90,14 @@ namespace PobieranieIWysylka
                     if (i != 0)
                     {
 
-                        MessageBox.Show("Pomyślnie pobrano pliki z katalogu " + sftpFolderPath);
-
+                        MessageBox.Show("Pomyślnie pobrano zamówienia");
+                        maskedTextBox1.Clear();
 
                         //Przenoszenie wszystkich plików do folderu archiwalnego na sftp
                         foreach (var file in files)
                         {
                             if (file.IsDirectory) continue;
                             client.RenameFile(file.FullName, $"{sftpArchFolderPath}/{file.Name}");
-                            maskedTextBox1.Clear();
                         }
 
                     }

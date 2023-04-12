@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GzDlCKhu+eKFMbsiHGBlqhAoKqzAz+6uPy8ku+8kge/UzPuzDVspECJ+Y2ORz8CznFq95akXkqYzp+aNg6BRlQ==",
+  "dgSpecHash": "ctGoNJFxcW9mPY0w5D2L388S5LP+DZlKFQP+y+ZqF+pzMi6KbgOKDNR+zzcMPJgrDA69jO85f30/dtR3UJCk0w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kkur\\Desktop\\Projekty Github\\Farmitoo\\PobieranieIWysylka\\PobieranieIWysylka\\PobieranieIWysylka.csproj",
+  "projectFilePath": "C:\\Users\\kkur\\Desktop\\Projekty repozytoria\\Farmitoo\\PobieranieIWysylka\\PobieranieIWysylka\\PobieranieIWysylka.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kkur\\.nuget\\packages\\ssh.net\\2020.0.2\\ssh.net.2020.0.2.nupkg.sha512",
     "C:\\Users\\kkur\\.nuget\\packages\\sshnet.security.cryptography\\1.3.0\\sshnet.security.cryptography.1.3.0.nupkg.sha512",

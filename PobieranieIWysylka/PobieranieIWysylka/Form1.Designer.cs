@@ -3,6 +3,8 @@ namespace PobieranieIWysylka
 {
     partial class Form1
     {
+        private const string V = "Form1";
+
         /// <summary>
         ///  Required designer variable.
         /// </summary>
@@ -87,7 +89,7 @@ namespace PobieranieIWysylka
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = V;
             this.ResumeLayout(false);
             this.PerformLayout();
 

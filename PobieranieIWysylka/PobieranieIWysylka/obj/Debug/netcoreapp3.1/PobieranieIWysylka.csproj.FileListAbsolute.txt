@@ -18,3 +18,43 @@ C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PobieranieIWysylka\PobieranieIWys
 C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Debug\netcoreapp3.1\PobieranieIWysylka.dll
 C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Debug\netcoreapp3.1\PobieranieIWysylka.pdb
 C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Debug\netcoreapp3.1\PobieranieIWysylka.genruntimeconfig.cache
+\\Backup\k\Foldery pracowników\Krzysztof Kurowski\Projekty\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Debug\netcoreapp3.1\PobieranieIWysylka.exe
+\\Backup\k\Foldery pracowników\Krzysztof Kurowski\Projekty\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Debug\netcoreapp3.1\PobieranieIWysylka.dll.config
+\\Backup\k\Foldery pracowników\Krzysztof Kurowski\Projekty\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Debug\netcoreapp3.1\PobieranieIWysylka.deps.json
+\\Backup\k\Foldery pracowników\Krzysztof Kurowski\Projekty\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Debug\netcoreapp3.1\PobieranieIWysylka.runtimeconfig.json
+\\Backup\k\Foldery pracowników\Krzysztof Kurowski\Projekty\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Debug\netcoreapp3.1\PobieranieIWysylka.runtimeconfig.dev.json
+\\Backup\k\Foldery pracowników\Krzysztof Kurowski\Projekty\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Debug\netcoreapp3.1\PobieranieIWysylka.dll
+\\Backup\k\Foldery pracowników\Krzysztof Kurowski\Projekty\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Debug\netcoreapp3.1\PobieranieIWysylka.pdb
+\\Backup\k\Foldery pracowników\Krzysztof Kurowski\Projekty\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Debug\netcoreapp3.1\Renci.SshNet.dll
+\\Backup\k\Foldery pracowników\Krzysztof Kurowski\Projekty\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Debug\netcoreapp3.1\SshNet.Security.Cryptography.dll
+\\Backup\k\Foldery pracowników\Krzysztof Kurowski\Projekty\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Debug\netcoreapp3.1\PobieranieIWysylka.csprojAssemblyReference.cache
+\\Backup\k\Foldery pracowników\Krzysztof Kurowski\Projekty\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Debug\netcoreapp3.1\PobieranieIWysylka.Form1.resources
+\\Backup\k\Foldery pracowników\Krzysztof Kurowski\Projekty\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Debug\netcoreapp3.1\PobieranieIWysylka.Form2.resources
+\\Backup\k\Foldery pracowników\Krzysztof Kurowski\Projekty\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Debug\netcoreapp3.1\PobieranieIWysylka.csproj.GenerateResource.cache
+\\Backup\k\Foldery pracowników\Krzysztof Kurowski\Projekty\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Debug\netcoreapp3.1\PobieranieIWysylka.AssemblyInfoInputs.cache
+\\Backup\k\Foldery pracowników\Krzysztof Kurowski\Projekty\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Debug\netcoreapp3.1\PobieranieIWysylka.AssemblyInfo.cs
+\\Backup\k\Foldery pracowników\Krzysztof Kurowski\Projekty\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Debug\netcoreapp3.1\PobieranieIWysylka.csproj.CoreCompileInputs.cache
+\\Backup\k\Foldery pracowników\Krzysztof Kurowski\Projekty\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Debug\netcoreapp3.1\PobieranieIWysylka.csproj.CopyComplete
+\\Backup\k\Foldery pracowników\Krzysztof Kurowski\Projekty\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Debug\netcoreapp3.1\PobieranieIWysylka.dll
+\\Backup\k\Foldery pracowników\Krzysztof Kurowski\Projekty\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Debug\netcoreapp3.1\PobieranieIWysylka.pdb
+\\Backup\k\Foldery pracowników\Krzysztof Kurowski\Projekty\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Debug\netcoreapp3.1\PobieranieIWysylka.genruntimeconfig.cache
+C:\Users\kkur\Desktop\Projekty repozytoria\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Debug\netcoreapp3.1\PobieranieIWysylka.exe
+C:\Users\kkur\Desktop\Projekty repozytoria\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Debug\netcoreapp3.1\PobieranieIWysylka.dll.config
+C:\Users\kkur\Desktop\Projekty repozytoria\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Debug\netcoreapp3.1\PobieranieIWysylka.deps.json
+C:\Users\kkur\Desktop\Projekty repozytoria\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Debug\netcoreapp3.1\PobieranieIWysylka.runtimeconfig.json
+C:\Users\kkur\Desktop\Projekty repozytoria\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Debug\netcoreapp3.1\PobieranieIWysylka.runtimeconfig.dev.json
+C:\Users\kkur\Desktop\Projekty repozytoria\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Debug\netcoreapp3.1\PobieranieIWysylka.dll
+C:\Users\kkur\Desktop\Projekty repozytoria\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Debug\netcoreapp3.1\PobieranieIWysylka.pdb
+C:\Users\kkur\Desktop\Projekty repozytoria\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Debug\netcoreapp3.1\Renci.SshNet.dll
+C:\Users\kkur\Desktop\Projekty repozytoria\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Debug\netcoreapp3.1\SshNet.Security.Cryptography.dll
+C:\Users\kkur\Desktop\Projekty repozytoria\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Debug\netcoreapp3.1\PobieranieIWysylka.csprojAssemblyReference.cache
+C:\Users\kkur\Desktop\Projekty repozytoria\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Debug\netcoreapp3.1\PobieranieIWysylka.Form1.resources
+C:\Users\kkur\Desktop\Projekty repozytoria\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Debug\netcoreapp3.1\PobieranieIWysylka.Form2.resources
+C:\Users\kkur\Desktop\Projekty repozytoria\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Debug\netcoreapp3.1\PobieranieIWysylka.csproj.GenerateResource.cache
+C:\Users\kkur\Desktop\Projekty repozytoria\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Debug\netcoreapp3.1\PobieranieIWysylka.AssemblyInfoInputs.cache
+C:\Users\kkur\Desktop\Projekty repozytoria\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Debug\netcoreapp3.1\PobieranieIWysylka.AssemblyInfo.cs
+C:\Users\kkur\Desktop\Projekty repozytoria\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Debug\netcoreapp3.1\PobieranieIWysylka.csproj.CoreCompileInputs.cache
+C:\Users\kkur\Desktop\Projekty repozytoria\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Debug\netcoreapp3.1\PobieranieIWysylka.csproj.CopyComplete
+C:\Users\kkur\Desktop\Projekty repozytoria\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Debug\netcoreapp3.1\PobieranieIWysylka.dll
+C:\Users\kkur\Desktop\Projekty repozytoria\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Debug\netcoreapp3.1\PobieranieIWysylka.pdb
+C:\Users\kkur\Desktop\Projekty repozytoria\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\obj\Debug\netcoreapp3.1\PobieranieIWysylka.genruntimeconfig.cache
