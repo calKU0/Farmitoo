@@ -1,2 +1,0 @@
-C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Release\netcoreapp3.1\publish\PobieranieIWysylka.pdb
-C:\Users\kkur\Desktop\Projekty Github\Farmitoo\PobieranieIWysylka\PobieranieIWysylka\bin\Release\netcoreapp3.1\publish\PobieranieIWysylka.exe
